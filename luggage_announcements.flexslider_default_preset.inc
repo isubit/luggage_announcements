@@ -47,7 +47,7 @@ function luggage_announcements_flexslider_default_presets() {
     'controlNav' => '1',
     'prevText' => '',
     'nextText' => '',
-    'pausePlay' => 0,
+    'pausePlay' => 1,
     'pauseText' => 'Pause',
     'playText' => 'Play',
     'randomize' => 0,
@@ -55,7 +55,7 @@ function luggage_announcements_flexslider_default_presets() {
     'thumbCaptionsBoth' => 0,
     'animationLoop' => 1,
     'pauseOnAction' => 1,
-    'pauseOnHover' => 0,
+    'pauseOnHover' => 1,
     'manualControls' => '',
   );
   $export['announcemant_slider'] = $preset;
