@@ -235,6 +235,7 @@ function luggage_announcements_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'alt_field' => 1,
+      'alt_field_required' => 1,
       'default_image' => 0,
       'file_directory' => 'announcement/images',
       'file_extensions' => 'png gif jpg jpeg',
@@ -242,6 +243,7 @@ function luggage_announcements_field_default_field_instances() {
       'max_resolution' => '',
       'min_resolution' => '',
       'title_field' => 1,
+      'title_field_required' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -463,6 +465,7 @@ function luggage_announcements_field_default_field_instances() {
     'required' => 1,
     'settings' => array(
       'alt_field' => 1,
+      'alt_field_required' => 1,
       'default_image' => 0,
       'file_directory' => 'announcement/images',
       'file_extensions' => 'png gif jpg jpeg',
@@ -470,6 +473,7 @@ function luggage_announcements_field_default_field_instances() {
       'max_resolution' => '',
       'min_resolution' => '',
       'title_field' => 1,
+      'title_field_required' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
