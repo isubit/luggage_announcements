@@ -16,8 +16,6 @@ function luggage_announcements_flexslider_default_presets() {
   $preset->name = 'announcemant_slider';
   $preset->title = 'announcemant slider';
   $preset->theme = 'classic';
-  $preset->imagestyle_normal = 'announcement_full';
-  $preset->imagestyle_thumbnail = 'flexslider_thumbnail';
   $preset->options = array(
     'namespace' => 'flex-',
     'selector' => '.slides > li',
@@ -26,7 +24,7 @@ function luggage_announcements_flexslider_default_presets() {
     'reverse' => 0,
     'smoothHeight' => 0,
     'startAt' => '0',
-    'animationSpeed' => '600',
+    'animationSpeed' => '1500',
     'initDelay' => '0',
     'useCSS' => 1,
     'touch' => 1,
@@ -44,12 +42,12 @@ function luggage_announcements_flexslider_default_presets() {
     'move' => '0',
     'animation' => 'fade',
     'slideshow' => 1,
-    'slideshowSpeed' => '7000',
-    'directionNav' => 1,
+    'slideshowSpeed' => '10000',
+    'directionNav' => 0,
     'controlNav' => '1',
     'prevText' => '',
     'nextText' => '',
-    'pausePlay' => 0,
+    'pausePlay' => 1,
     'pauseText' => 'Pause',
     'playText' => 'Play',
     'randomize' => 0,
@@ -57,7 +55,7 @@ function luggage_announcements_flexslider_default_presets() {
     'thumbCaptionsBoth' => 0,
     'animationLoop' => 1,
     'pauseOnAction' => 1,
-    'pauseOnHover' => 0,
+    'pauseOnHover' => 1,
     'manualControls' => '',
   );
   $export['announcemant_slider'] = $preset;
