@@ -11,7 +11,7 @@ function luggage_announcements_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance:
-  // 'node-announcement-field_announcement_alternate_url'.
+  // 'node-announcement-field_announcement_alternate_url'
   $field_instances['node-announcement-field_announcement_alternate_url'] = array(
     'bundle' => 'announcement',
     'default_value' => NULL,
@@ -20,17 +20,15 @@ function luggage_announcements_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'inline',
-        'module' => 'link',
         'settings' => array(),
-        'type' => 'link_url',
-        'weight' => 0,
+        'type' => 'hidden',
+        'weight' => 3,
       ),
       'full' => array(
         'label' => 'inline',
-        'module' => 'link',
         'settings' => array(),
-        'type' => 'link_url',
-        'weight' => 0,
+        'type' => 'hidden',
+        'weight' => 3,
       ),
       'search_index' => array(
         'label' => 'inline',
@@ -48,10 +46,9 @@ function luggage_announcements_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'inline',
-        'module' => 'link',
         'settings' => array(),
-        'type' => 'link_url',
-        'weight' => 0,
+        'type' => 'hidden',
+        'weight' => 3,
       ),
     ),
     'entity_type' => 'node',
@@ -89,7 +86,7 @@ function luggage_announcements_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-announcement-field_announcement_body'.
+  // Exported field_instance: 'node-announcement-field_announcement_body'
   $field_instances['node-announcement-field_announcement_body'] = array(
     'bundle' => 'announcement',
     'default_value' => NULL,
@@ -101,14 +98,14 @@ function luggage_announcements_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'full' => array(
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'search_index' => array(
         'label' => 'hidden',
@@ -133,7 +130,7 @@ function luggage_announcements_field_default_field_instances() {
           'trim_length' => 600,
         ),
         'type' => 'text_summary_or_trimmed',
-        'weight' => 1,
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'node',
@@ -188,7 +185,7 @@ function luggage_announcements_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-announcement-field_announcement_body_image'.
+  // Exported field_instance: 'node-announcement-field_announcement_body_image'
   $field_instances['node-announcement-field_announcement_body_image'] = array(
     'bundle' => 'announcement',
     'deleted' => 0,
@@ -277,7 +274,7 @@ function luggage_announcements_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-announcement-field_announcement_caption'.
+  // Exported field_instance: 'node-announcement-field_announcement_caption'
   $field_instances['node-announcement-field_announcement_caption'] = array(
     'bundle' => 'announcement',
     'default_value' => NULL,
@@ -307,7 +304,7 @@ function luggage_announcements_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -335,7 +332,7 @@ function luggage_announcements_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-announcement-field_announcement_files'.
+  // Exported field_instance: 'node-announcement-field_announcement_files'
   $field_instances['node-announcement-field_announcement_files'] = array(
     'bundle' => 'announcement',
     'deleted' => 0,
@@ -416,7 +413,7 @@ function luggage_announcements_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-announcement-field_announcement_image'.
+  // Exported field_instance: 'node-announcement-field_announcement_image'
   $field_instances['node-announcement-field_announcement_image'] = array(
     'bundle' => 'announcement',
     'deleted' => 0,
@@ -448,13 +445,13 @@ function luggage_announcements_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 7,
       ),
     ),
     'entity_type' => 'node',
@@ -505,7 +502,7 @@ function luggage_announcements_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-announcement-field_announcement_type'.
+  // Exported field_instance: 'node-announcement-field_announcement_type'
   $field_instances['node-announcement-field_announcement_type'] = array(
     'bundle' => 'announcement',
     'default_value' => NULL,
@@ -514,17 +511,15 @@ function luggage_announcements_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'inline',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 3,
+        'type' => 'hidden',
+        'weight' => 4,
       ),
       'full' => array(
         'label' => 'inline',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 3,
+        'type' => 'hidden',
+        'weight' => 4,
       ),
       'search_index' => array(
         'label' => 'inline',
@@ -542,10 +537,9 @@ function luggage_announcements_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'inline',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 3,
+        'type' => 'hidden',
+        'weight' => 4,
       ),
     ),
     'entity_type' => 'node',
@@ -564,7 +558,7 @@ function luggage_announcements_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-announcement-field_category'.
+  // Exported field_instance: 'node-announcement-field_category'
   $field_instances['node-announcement-field_category'] = array(
     'bundle' => 'announcement',
     'default_value' => NULL,
@@ -576,14 +570,14 @@ function luggage_announcements_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'full' => array(
         'label' => 'inline',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'search_index' => array(
         'label' => 'inline',
@@ -604,7 +598,7 @@ function luggage_announcements_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 2,
+        'weight' => 1,
       ),
     ),
     'entity_type' => 'node',
@@ -623,7 +617,7 @@ function luggage_announcements_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-announcement-field_tags'.
+  // Exported field_instance: 'node-announcement-field_tags'
   $field_instances['node-announcement-field_tags'] = array(
     'bundle' => 'announcement',
     'default_value' => NULL,
@@ -636,14 +630,14 @@ Baseball, bat, glove, ...',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 4,
+        'weight' => 2,
       ),
       'full' => array(
         'label' => 'inline',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 4,
+        'weight' => 2,
       ),
       'search_index' => array(
         'label' => 'inline',
@@ -664,7 +658,7 @@ Baseball, bat, glove, ...',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 4,
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'node',
