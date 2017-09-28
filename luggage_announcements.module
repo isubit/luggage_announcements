@@ -74,6 +74,9 @@ function luggage_announcements_preprocess_page(&$vars) {
   if (!empty($node) && $node->type == 'announcements' && arg(2) === null) {
     drupal_add_css(drupal_get_path('module', 'luggage_announcements') . '/css/luggage_announcements.css');
   }
+
+  // Add custom flexslider.load.js. Removing the default flexslider.load.js is in luggage_announcements_js_alter.
+  drupal_add_js(drupal_get_path('module', 'luggage_announcements') . '/js/flexslider.load.js', array('type' => 'file', 'scope' => 'footer'));
 }
 
 // Adding support to discover template files
@@ -98,5 +101,16 @@ function _luggage_announcements_insert_after_first_element(&$a, $element) {
   if(is_array($a)) {
     $first_element = array_shift($a);
     array_unshift($a, $first_element, $element);
+  }
+}
+
+/**
+ * Implements hook_js_alter().
+ */
+function luggage_announcements_js_alter(&$javascript) {
+  // Replace flexslider.load.js with a patched version LUGG-1012.
+  if (isset($javascript[drupal_get_path('module', 'flexslider') . '/assets/js/flexslider.load.js'])) {
+    unset($javascript[drupal_get_path('module', 'flexslider') . '/assets/js/flexslider.load.js']);
+    // The addition of luggage_announcement's flexslider.load.js is done in luggage_announcements_preprocess_page().
   }
 }
