@@ -63,7 +63,7 @@ function luggage_announcements_image_default_styles() {
 function luggage_announcements_node_info() {
   $items = array(
     'announcement' => array(
-      'name' => t('Announcement'),
+      'name' => t('Announcement Banner'),
       'base' => 'node_content',
       'description' => t('An announcement is a sliding banner image that can link to it\'s an announcement node or an alternative URL.'),
       'has_title' => '1',
