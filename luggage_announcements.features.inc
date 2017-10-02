@@ -65,7 +65,7 @@ function luggage_announcements_node_info() {
     'announcement' => array(
       'name' => t('Announcement Banner'),
       'base' => 'node_content',
-      'description' => t('An announcement is a sliding banner image that can link to it\'s an announcement node or an alternative URL.'),
+      'description' => t('Prominently feature important announcements as a banner image and a link to more details.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
