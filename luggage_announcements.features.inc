@@ -33,20 +33,20 @@ function luggage_announcements_image_default_styles() {
   $styles['announcement_full'] = array(
     'label' => 'announcement_full',
     'effects' => array(
-      5 => array(
+      1 => array(
         'name' => 'image_scale',
         'data' => array(
-          'width' => 1180,
+          'width' => 2000,
           'height' => '',
-          'upscale' => 0,
+          'upscale' => 1,
         ),
         'weight' => 1,
       ),
-      6 => array(
+      2 => array(
         'name' => 'image_crop',
         'data' => array(
-          'width' => 1180,
-          'height' => 346,
+          'width' => 2000,
+          'height' => 604,
           'anchor' => 'center-center',
         ),
         'weight' => 2,
