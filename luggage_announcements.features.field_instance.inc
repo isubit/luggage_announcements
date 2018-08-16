@@ -417,7 +417,7 @@ function luggage_announcements_field_default_field_instances() {
   $field_instances['node-announcement-field_announcement_image'] = array(
     'bundle' => 'announcement',
     'deleted' => 0,
-    'description' => 'This image will be scaled to a width of 1180px, then it will be cropped from the top and bottom equally to 1180px width by 346px height. If you want to control where it will get cropped, please submit an image already resized and cropped to 1180x346.',
+    'description' => 'This image will be scaled to a width of 2000px, then it will be cropped from the top and bottom equally to 2000px width by 604px height. If you want to control where it will get cropped, please submit an image already resized and cropped to 2000x604.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -694,7 +694,7 @@ Baseball, bat, glove, ...');
   t('Category');
   t('File(s)');
   t('Tags');
-  t('This image will be scaled to a width of 1180px, then it will be cropped from the top and bottom equally to 1180px width by 346px height. If you want to control where it will get cropped, please submit an image already resized and cropped to 1180x346.');
+  t('This image will be scaled to a width of 2000px, then it will be cropped from the top and bottom equally to 2000px width by 604px height. If you want to control where it will get cropped, please submit an image already resized and cropped to 2000x604.');
 
   return $field_instances;
 }
